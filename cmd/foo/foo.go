@@ -2,10 +2,12 @@
 Copyright © 2022 NAME HERE <EMAIL ADDRESS>
 
 */
-package cmd
+package foo
 
 import (
 	"fmt"
+
+	"example/cmd"
 
 	"github.com/spf13/cobra"
 )
@@ -26,7 +28,7 @@ to quickly create a Cobra application.`,
 }
 
 func init() {
-	rootCmd.AddCommand(fooCmd)
+	cmd.RootCmd.AddCommand(fooCmd)
 
 	// Here you will define your flags and configuration settings.
 
